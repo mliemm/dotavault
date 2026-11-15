@@ -5,10 +5,11 @@
 import { treaty } from '@elysiajs/eden'
 import type { App } from 'api'
 import type { ProDraftPairsResponse } from 'types'
+import { passFetch } from './pass'
 
 const BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
 
-const api = treaty<App>(BASE_URL)
+const api = treaty<App>(BASE_URL, { fetcher: passFetch })
 
 const TRANSIENT_STATUSES = new Set([0, 502, 503, 504, 521, 522, 523, 524])
 

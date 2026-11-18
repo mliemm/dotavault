@@ -54,7 +54,7 @@ function PlayButton({ compact }: { compact?: boolean }) {
 function GitHubIcon() {
   return (
     <a
-      href="https://github.com/mliem2k/dotavault"
+      href="https://github.com/mliemm/dotavault"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="GitHub repository"

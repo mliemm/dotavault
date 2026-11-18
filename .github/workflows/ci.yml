@@ -113,7 +113,7 @@ jobs:
       group: deploy
       cancel-in-progress: true
     # Built and uploaded from apps/web so Wrangler picks up apps/web/functions (the /df proxy).
-    uses: mliemm/kit/.github/workflows/deploy-pages.yml@v0.13.0
+    uses: mliemm/kit/.github/workflows/deploy-pages.yml@v0.14.0
     with:
       project: dotavault
       working_directory: apps/web
